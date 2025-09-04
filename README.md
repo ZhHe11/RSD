@@ -1,0 +1,2 @@
+* Based on the open-source project [METRA](https://github.com/seohongpark/METRA), we propose a new algorithm that improves performance.
+* The core algorithm implementation can be found in ./iod/RSD.py.
