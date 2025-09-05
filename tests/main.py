@@ -127,7 +127,7 @@ def get_argparser():
 
     parser.add_argument('--dual_reg', type=int, default=1, choices=[0, 1])
     parser.add_argument('--dual_lam', type=float, default=20)
-    parser.add_argument('--dual_slack', type=float, default=1e-4)
+    parser.add_argument('--dual_slack', type=float, default=1e-3)
     parser.add_argument('--dual_dist', type=str, default='one', choices=['l2', 's2_from_s', 'one'])
     parser.add_argument('--dual_lr', type=float, default=None)
     
@@ -146,14 +146,13 @@ def get_argparser():
     parser.add_argument('--_trans_online_sample_epochs', type=int, default=1)
     parser.add_argument('--target_theta', type=float, default=1.)
     
-    parser.add_argument('--SZP_w2', type=float, default=3.)
-    parser.add_argument('--SZP_w3', type=float, default=3.)
-    parser.add_argument('--SZP_window_size', type=float, default=10.)
-    parser.add_argument('--SZP_repeat_time', type=float, default=5.)
-    parser.add_argument('--Repr_temperature', type=float, default=0.5)
+    parser.add_argument('--SZN_w2', type=float, default=3.)
+    parser.add_argument('--SZN_w3', type=float, default=3.)
+    parser.add_argument('--SZN_window_size', type=float, default=10.)
+    parser.add_argument('--SZN_repeat_time', type=float, default=5.)
     parser.add_argument('--Repr_max_step', type=float, default=300.)
-    parser.add_argument('--SZP_std_min', type=float, default=1e-1)
-    parser.add_argument('--SZP_std_max', type=float, default=5e-1)
+    parser.add_argument('--SZN_std_min', type=float, default=1e-1)
+    parser.add_argument('--SZN_std_max', type=float, default=5e-1)
     parser.add_argument('--z_unit', type=int, default=0)
     parser.add_argument('--save_pt_step', type=int, default=500)
     

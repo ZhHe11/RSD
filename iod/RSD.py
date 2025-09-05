@@ -53,23 +53,16 @@ class RSD(IOD):
             phi_type="baseline",
             policy_type="baseline",
             explore_type="baseline",
-            
-            goal_sample_network=None,
-            space_predictor=None,
-            _trans_phi_optimization_epochs=1,
-            _trans_policy_optimization_epochs=1,
-            target_theta=1,
-
-            SampleZNetwork=None,
+        
             SampleZPolicy=None,
             
-            SZN_w2 = 3,
-            SZN_w3 = 3,
-            SZN_window_size = 10,
-            SZN_repeat_time = 5,
+            SZN_w2=3,
+            SZN_w3=3,
+            SZN_window_size=10,
+            SZN_repeat_time=5,
 
-            Repr_temperature = 0.5,
-            Repr_max_step = 5,
+            Repr_temperature=0.5,
+            Repr_max_step=5,
             
             z_unit = 0,
 
@@ -165,7 +158,6 @@ class RSD(IOD):
         self.SZN_window_size = SZN_window_size
         self.SZN_repeat_time = SZN_repeat_time
         
-        self.Repr_temperature = Repr_temperature
         self.Repr_max_step = Repr_max_step
         self.SfReprBuffer = []
         
