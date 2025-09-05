@@ -33,5 +33,24 @@ conda activate rsd
 # 3. Install dependencies
 pip install -r requirements.txt
 
+```
+
+## Usage
+```
+sh run_large.sh
+```
+
+## Citation
+```
+@misc{zhang2025efficientskilldiscoveryregretaware,
+      title={Efficient Skill Discovery via Regret-Aware Optimization}, 
+      author={He Zhang and Ming Zhou and Shaopeng Zhai and Ying Sun and Hui Xiong},
+      year={2025},
+      eprint={2506.21044},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2506.21044}, 
+}
+```
 
 
